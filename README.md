@@ -1,21 +1,58 @@
-# Project
-#Summary 
+# GPA-Linked-to-Depression
 
-# Depression Rates
-# - GPA >= 3.0: Highest in Year 3 females (50%) and Year 2 males (40%)
-# - GPA <= 3.0: Highest in Year 1 females (66%), no reported depression among males
+Exploring the relationship between academic performance and depression indicators in college students — using Python to identify whether GPA and lifestyle factors can signal mental health risk.
 
-# Anxiety Rates
-# - GPA >= 3.0: High in Year 1-3 students; peaks at Year 2 males (50%) and Year 3 females (~39%)
-# - GPA <= 3.0: Only Year 1 females report anxiety (33.3%), rest are 0%
+## 📊 Project Overview
 
-# Panic Attacks
-# - GPA >= 3.0: Highest in Year 3 females (44%) and Year 1 males (50%)
-# - GPA <= 3.0: Year 2 males (100%), Year 1 females (66%), Year 3 females (50%)
+This project investigates whether a measurable relationship exists between GPA and self-reported depression symptoms using college student survey data. The findings have real-world implications for university wellness programs and early intervention strategies.
 
-#Key Takeaways:
-# - Mental health issues are more common in early and middle years (Year 1–3)
-# - Female students report higher depression and panic rates across both GPA ranges
-# - Students with GPA ≥ 3.0 still experience significant anxiety and panic symptoms
-# - Some data and lack of data could cause some these percents to not be as accruate. As alot the data for students less than 3.00 or equal
-# seems to be missing from the data. A bigger dataset would help give more accurate insight
+The analysis is divided into two primary phases:
+
+**Exploratory Data Analysis:** Investigating distributions, correlations, and patterns between GPA ranges and depression indicators including sleep, social activity, and academic load.
+
+**Classification Modeling:** Applying machine learning to predict depression risk categories based on student attributes, and evaluating which features carry the most predictive weight.
+
+## 🛠️ Tech Stack
+
+**Language:** Python
+
+**Modeling:** scikit-learn
+
+**Data Manipulation:** Pandas, NumPy
+
+**Visualization:** Matplotlib, Seaborn
+
+## 🔍 Key Methodologies
+
+### 1. Exploratory Data Analysis (EDA)
+Distributions and correlations were mapped across GPA ranges and depression indicators. Key questions explored: Do lower GPA students report higher depression rates? Which lifestyle factors (sleep, social activity, academic load) correlate most strongly with mental health outcomes?
+
+### 2. Data Cleaning & Preprocessing
+Missing values were handled, categorical variables standardized, and features prepared for classification modeling.
+
+### 3. Classification Modeling
+Machine learning was applied to predict depression risk categories from student attributes. Feature importance was evaluated to identify the strongest predictors across academic and lifestyle variables.
+
+### 4. Visualization
+Charts were built to communicate the relationship between GPA and mental health outcomes clearly — designed to be readable by a non-technical audience.
+
+## 📈 Key Questions Explored
+
+- Do students with lower GPAs report higher rates of depression symptoms?
+- Which features (sleep, social activity, academic load) correlate most strongly with depression indicators?
+- Can a predictive model identify at-risk students based on academic and lifestyle data?
+
+## 🚀 How to Run
+
+Clone the repository.
+
+Install dependencies:
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn
+```
+
+Open and run `GPA_Depression_Analysis.ipynb` in Jupyter Notebook to reproduce the full analysis.
+
+---
+
+*Note: This project is for academic and analytical purposes only. All data is anonymized survey data. The goal is to surface patterns that could inform student wellness resources — not to make clinical determinations.*
